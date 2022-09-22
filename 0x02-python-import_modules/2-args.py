@@ -5,7 +5,7 @@ if __name__ == "__main__":
     i = 1
     word = "argument" if (l == 2) else "arguments"
     end = "." if (l == 1) else ":"
-    print(f"{l - 1} {word}{end}")
+    print("{} {}{}".format(l - 1, word, end))
     for arg in argv[1:]:
-        print(f"{i}: {arg}")
+        print("{}: {}".format(i, arg))
         i += 1
