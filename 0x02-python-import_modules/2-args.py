@@ -6,6 +6,6 @@ if __name__ == "__main__":
     word = "argument" if (l == 2) else "arguments"
     end = "." if (l == 1) else ":"
     print("{} {}{}".format(l - 1, word, end))
-    for arg in sys.argv[1:]:
+    for arg in sys.argv:
         print("{}: {}".format(i, arg))
         i += 1
