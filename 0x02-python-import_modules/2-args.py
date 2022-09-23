@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    l = len(sys.argv)
+    length = len(sys.argv)
     i = 1
-    word = "argument" if (l == 2) else "arguments"
-    end = "." if (l == 1) else ":"
-    print("{} {}{}".format(l - 1, word, end))
+    word = "argument" if (length == 2) else "arguments"
+    end = "." if (length == 1) else ":"
+    print("{} {}{}".format(length - 1, word, end))
     for arg in sys.argv[1:]:
         print("{}: {}".format(i, arg))
         i += 1
