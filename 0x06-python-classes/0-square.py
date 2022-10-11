@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+
+"""Module for squade class"""
+
+
 class Square:
-    """The Square clsss represents a square"""
+    """A simple  Square object"""
     pass
