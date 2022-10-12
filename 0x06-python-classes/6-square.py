@@ -71,6 +71,6 @@ f 2 positive integers")
 
         print("\n"*self.__position[1], end="")
         for i in range(self.__size):
-            print(("_" * self.__position[0]) + ("#" * self.__size))
+            print((" " * self.__position[0]) + ("#" * self.__size))
         if self.__size == 0:
             print()
