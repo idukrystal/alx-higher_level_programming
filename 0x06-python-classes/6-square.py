@@ -13,16 +13,8 @@ class Square:
             position(turple(int,int): position coordinates
         """
 
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        if (size < 0):
-            raise ValueError("size must be >= 0")
-        self.__size = size
-        if not (type(position) is tuple):
-            raise TypeError("position must be a tuple of 2 positive integers")
-        if (len(position) != 2) or (position[0] < 0 or position[1] < 0):
-            raise TypeError("position must be a tuple of 2 positive integers")
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         """Computes the area of square"""
@@ -59,11 +51,9 @@ class Square:
         """setter for position"""
 
         if not (type(value) is tuple):
-            raise TypeError("position must be a tuple o\
-f 2 positive integers")
+            raise TypeError("position must be a tuple of 2 positive integers")
         if (len(value) != 2) or (value[0] < 0 or value[1] < 0):
-            raise TypeError("position must be a tuple o\
-f 2 positive integers")
+            raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
     def my_print(self):
