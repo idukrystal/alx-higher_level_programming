@@ -49,7 +49,7 @@ class Rectangle:
     def __str__(self):
         if self.width == 0 or self.height == 0:
             return ""
-        line = str(self.print_symbol)*self.width
+        line = '#'*self.width
         return ((line + '\n') * (self.height - 1)) + line
 
     def __repr__(self):
