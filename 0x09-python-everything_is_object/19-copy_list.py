@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-def copy_list(l):
-    return eval(str(l))
+def copy_list(lis):
+    return eval(str(lis))
