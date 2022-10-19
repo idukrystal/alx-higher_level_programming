@@ -11,3 +11,9 @@ class LockedClass:
             raise AttributeError(msg)
         else:
             self.__dict__[attribute] = value
+    def __getattr__(self, attribute):
+        if attribute != "first_name":
+            msg = "'LockedClass' object has no attribute 'last_name'"
+            raise AttributeError(msg)
+        else:
+            return self.__dict__[attribute]
