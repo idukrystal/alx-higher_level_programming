@@ -9,3 +9,5 @@ class LockedClass:
         if attribute != "first_name":
             msg = "'LockedClass' object has no attribute 'last_name'"
             raise AttributeError(msg)
+        else:
+            self.__dict__[attribute] = value
