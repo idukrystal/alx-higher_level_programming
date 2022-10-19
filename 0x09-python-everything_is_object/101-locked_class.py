@@ -6,6 +6,6 @@ class LockedClass:
     """A locled class"""
     def __setattr__(self, attribute, value):
         """intercepts atrrs creatio """
-        if attribute == "first_name":
-            return
-        raise AttributeError("'Locked'")
+        if attribute != "first_name":
+            msg = "'LockedClass' object has no attribute 'last_name'"
+            raise AttributeError(msg)
