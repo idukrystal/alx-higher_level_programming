@@ -1,0 +1,30 @@
+#!/usr/bin/python3
+
+"""module 2-matrix_divided
+   fuctions:
+       def matrix_divided(matrix, div)
+       example
+          >>> matrix_divided([[4, 8], [16, 20]], div)
+          [[1, 2], [4, 5]]
+"""
+
+
+def matrix_divided(matrix, div):
+    """divides a all numbers withen a list of list of numbers(matrix) by (div)
+    n.b
+       matrix musts be square
+    """
+    if not (isinstance(matrix, list) and
+            all(isinstance(li, list) and
+                all(isinstance(it, int) or
+                     isinstance(it, float) for
+                     it in li)
+                ) for li in matrix)
+            ):
+        pass
+
+    for nums in matrix:
+        for num in nums:
+            num / div
+
+    return res
