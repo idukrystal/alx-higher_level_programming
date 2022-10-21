@@ -1,0 +1,26 @@
+#!/usr/bin/python3
+""" module for task 4 """
+
+
+def text_indentation(text):
+    """ indets texts """
+    if not isinstance(text, str):
+        raise TypeError("text must be a string")
+
+    i = 0
+    dep = 0
+    length = len(text)
+    while i < length:
+        if dep == 0:
+            while i < length and text[i] == ' ':
+                i += 1
+            if not (i < length):
+                print("_______"+str(i))
+        print(text[i], end="")
+        dep += 1
+        if text[i] in ['.', '?', ':']:
+            print('\n')
+            dep = 0
+        elif text[i] == '\n':
+            dep = 0
+        i += 1

@@ -1,0 +1,23 @@
+>>> indent = __import__("5-text_indentation").text_indentation
+
+>>> indent(4)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> indent("man or. war and ? only:god")
+man or.
+<BLANKLINE>
+war and ?
+<BLANKLINE>
+only:
+<BLANKLINE>
+god
+
+>>> indent("man of war. \n of war i say . i say\n yes")
+man of war.
+<BLANKLINE>
+<BLANKLINE>
+of war i say .
+<BLANKLINE>
+i say
+yes
