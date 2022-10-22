@@ -50,3 +50,11 @@ TypeError: each row of m_b must be of the same size
 >>> mul(m_a, m_a)
 Traceback (most recent call last):
 ValueError: m_a and m_b can't be multiplied
+
+>>> mul(m_a)
+Traceback (most recent call last):
+TypeError: matrix_mul() missing 1 required positional argument: 'm_b'
+
+>>> mul()
+Traceback (most recent call last):
+TypeError: matrix_mul() missing 2 required positional arguments: 'm_a' and 'm_b'
