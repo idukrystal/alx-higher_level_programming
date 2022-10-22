@@ -58,4 +58,4 @@ TypeError: lazy_matrix_mul() missing 1 required positional argument: 'm_b'
 
 >>> mul()
 Traceback (most recent call last):
-TypeError: matrix_mul() missing 2 required positional arguments: 'm_a' and 'm_b'
+TypeError: lazy_matrix_mul() missing 2 required positional arguments: 'm_a' and 'm_b'
