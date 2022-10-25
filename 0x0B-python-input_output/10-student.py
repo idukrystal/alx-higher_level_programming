@@ -15,7 +15,7 @@ class Student:
     def to_json(self, attrs=None):
         dic = self.__dict__
         if isinstance(attrs, list) & all(isinstance(it, str) for it in attrs):
-            for key in dic:
-                if key not in attrs:
-                    del dic[key]
+            att = [key for key in dic if key not in attrs]
+            for key in att:
+                del dic[key]
         return dic
