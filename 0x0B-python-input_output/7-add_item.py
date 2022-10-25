@@ -13,5 +13,5 @@ try:
     obj = load_from_json_file(file)
 except (JSONDecodeError):
     obj = []
-obj.append(list(argv)[1:])
+obj.extend(list(argv)[1:])
 save_to_json_file(obj, file)
