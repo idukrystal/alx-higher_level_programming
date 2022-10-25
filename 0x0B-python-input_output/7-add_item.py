@@ -13,5 +13,8 @@ try:
     obj = load_from_json_file(file)
 except (JSONDecodeError):
     obj = []
-obj.extend(list(argv)[1:])
+
+for it in (list(argv)[1:]):
+    if not it in obj:
+        obj.append(it)
 save_to_json_file(obj, file)
