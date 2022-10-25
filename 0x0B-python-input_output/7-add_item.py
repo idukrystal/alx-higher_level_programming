@@ -14,7 +14,5 @@ try:
 except (JSONDecodeError):
     obj = []
 
-for it in (list(argv)[1:]):
-    if not it in obj:
-        obj.append(it)
+obj.extend(list(argv)[1:])
 save_to_json_file(obj, file)
