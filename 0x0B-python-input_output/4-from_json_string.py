@@ -6,4 +6,4 @@ def from_json_string(my_str):
     """return obj from json reb of my_obj"""
 
     import json
-    return json.load(my_str)
+    return json.loads(my_str)
