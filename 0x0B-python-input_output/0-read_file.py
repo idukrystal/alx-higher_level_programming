@@ -4,6 +4,6 @@
 
 def read_file(filename=""):
     """outputs xontents of filename"""
-    with open(filename, 'r', 'utf-8') as file:
+    with open(filename, 'r', encoding='utf-8') as file:
         read_data = file.read()
     print(read_data)
