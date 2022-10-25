@@ -3,7 +3,7 @@
 
 
 def read_file(filename=""):
-    """outputs xontents of filename"""
-    with open(filename, 'r', encoding='utf-8') as file:
-        read_data = file.read()
+    """outputs contents of filename"""
+    with open(filename, 'r', encoding="utf-8") as fil:
+        read_data = fil.read()
     print(read_data)
