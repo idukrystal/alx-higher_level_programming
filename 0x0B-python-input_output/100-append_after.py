@@ -8,7 +8,6 @@ def has(this, that):
     le2 = len(this)
     i = 0
     while i < le1:
-        print(i)
         if that[i] == this[0]:
             j = i
             while j < le1 and (j - i) < le2 and that[j] == this[j - i]:
