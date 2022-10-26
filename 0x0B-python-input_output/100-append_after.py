@@ -20,6 +20,8 @@ def has(this, that):
 
 def append_after(filename="", search_string="", new_string=""):
     """appends new to new lines after any line in file containing search"""
+    if search_string == "":
+        return
     with open(filename, "r") as fil:
         lines = fil.readlines()
         for i in range(len(lines)):
