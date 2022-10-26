@@ -18,6 +18,8 @@ def getdata(st, no):
                     return st[i+1:j]
 
 
+""" Reads every ten lines of stdin printing errors and storage used
+"""
 fs = 0
 sc = {200: 0, 301: 0, 400: 0, 401: 0, 403: 0, 404: 0, 405: 0, 500: 0}
 
