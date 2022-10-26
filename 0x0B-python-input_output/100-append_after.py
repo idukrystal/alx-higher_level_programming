@@ -21,9 +21,9 @@ def has(this, that):
 def append_after(filename="", search_string="", new_string=""):
     """appends new to new lines after any line in file containing search"""
     if not isinstance(search_string, str):
-        raise TypeError("search_string mist be a string");
+        raise TypeError("search_string must be a string")
     if not isinstance(new_string, str):
-        raise TypeError("new_string mist be a string");
+        raise TypeError("new_string must be a string")
     with open(filename, "r") as fil:
         lines = fil.readlines()
         for i in range(len(lines)):
