@@ -9,3 +9,4 @@ Attributes:
 """
 
 from sys import stdin
+""" lit gang shit"""
