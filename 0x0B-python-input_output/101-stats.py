@@ -33,8 +33,6 @@ def getdata(st, no):
                     return st[i+1:j]
 
 
-fs = 0
-sc = {200: 0, 301: 0, 400: 0, 401: 0, 403: 0, 404: 0, 405: 0, 500: 0}
 
 while True:
     for i in range(10):
