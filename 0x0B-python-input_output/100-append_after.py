@@ -7,6 +7,8 @@ def has(this, that):
     le1 = len(that)
     le2 = len(this)
     i = 0
+    if this == "":
+        return False
     while i < le1:
         if that[i] == this[0]:
             j = i
