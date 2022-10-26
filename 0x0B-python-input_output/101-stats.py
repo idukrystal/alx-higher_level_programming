@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Reads every ten lines of stdin printing errors and storage us\
+""" Reads every ten lines of stdin printing errors and storage u\
 ed
 
 Attributes:
@@ -10,14 +10,14 @@ Attributes:
 
 
 from sys import stdin
-""" Imports stdin """
+""" Imports stdin module  """
 
 def getdata(st, no):
     """ Parses st for the noth <>
 
     Args:
-        st (str): string to parsr
-        no (int); point to parse from
+        st (str): String to Parsr
+        no (int); Point to parse from
 
     Returns:
         returns int parsed
@@ -34,6 +34,7 @@ def getdata(st, no):
 
 
 while True:
+    """ pumch in the good """
     for i in range(10):
         try:
             line = stdin.readline()
