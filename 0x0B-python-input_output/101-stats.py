@@ -7,30 +7,8 @@ Attributes:
 
 """
 
-
 from sys import stdin
 """ imports stdin """
-
-def getdata(st, no):
-    """ parses st for the noth <>
-
-    Args:
-        st (str): string to parsr
-        no (int); point to parse from
-
-    Returns:
-        returns int parsed
-    """
-
-    le = len(st)
-    for i in range(le):
-        if st[i] == '<':
-            no -= 1
-        if no == 0:
-            for j in range(i, le):
-                if st[j] == '>':
-                    return st[i+1:j]
-
 
 while True:
 """ a while loop """
