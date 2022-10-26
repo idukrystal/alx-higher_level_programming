@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""appends a string at a specific point in a file"""
+
+
 def has(this, that):
     """checks if that has this"""
     le1 = len(that)
