@@ -34,7 +34,7 @@ def getdata(st, no):
 
 
 while True:
-    """ pumch in the good """
+    """ Pumch in the good """
     for i in range(10):
         try:
             line = stdin.readline()
