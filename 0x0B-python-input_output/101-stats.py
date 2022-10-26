@@ -33,7 +33,6 @@ def getdata(st, no):
                     return st[i+1:j]
 
 
-
 while True:
     for i in range(10):
         try:
