@@ -8,5 +8,41 @@ Attributes:
 
 """
 
+
 from sys import stdin
-""" lit gang shit"""
+""" imports stdin """
+
+def getdata(st, no):
+    """ parses st for the noth <>
+
+    Args:
+        st (str): string to parsr
+        no (int); point to parse from
+
+    Returns:
+        returns int parsed
+    """
+
+    le = len(st)
+    for i in range(le):
+        if st[i] == '<':
+            no -= 1
+        if no == 0:
+            for j in range(i, le):
+                if st[j] == '>':
+                    return st[i+1:j]
+
+
+while True:
+    for i in range(10):
+        try:
+            line = stdin.readline()
+            fs += int(getdata(line, 4))
+            sc[int(getdata(line, 3))] += 1
+        except (KeyboardInterrupt):
+            break
+    print(f"File size: {fs}")
+    for key in sc:
+        if sc[key] != 0:
+            print(f"{key}: {sc[key]}")
+            sc[key] = 0
