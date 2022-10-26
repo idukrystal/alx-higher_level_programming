@@ -7,3 +7,5 @@ Attributes:
     sc (dict): records how many times an err code pops up
 
 """
+
+from sys import stdin
