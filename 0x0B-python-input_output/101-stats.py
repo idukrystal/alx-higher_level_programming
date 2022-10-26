@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Reads every ten lines of stdin printing errors and storage us\
-ed
+""" Reads every ten lines of stdin printing errors and storage used
 
 Attributes:
     fs (int): use dto safe total memory used
@@ -34,6 +33,7 @@ def getdata(st, no):
 
 
 while True:
+""" a while loop """
     for i in range(10):
         try:
             line = stdin.readline()
