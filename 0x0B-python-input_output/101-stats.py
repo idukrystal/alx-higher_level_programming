@@ -1,11 +1,13 @@
 #!/usr/bin/python3
-"""reads every ten lines of stdin printing errors are storage used"""
+
+"""reads every ten lines of stdin printing errors and storage used"""
 
 
 from sys import stdin
 
 
 def getdata(st, no):
+    """ parses st for the noth <>"""
     le = len(st)
     for i in range(le):
         if st[i] == '<':
