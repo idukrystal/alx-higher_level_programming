@@ -8,5 +8,5 @@ Attributes:
 """
 
 from sys import stdin
-""" imports stdin """
+""" Imports stdin """
 
