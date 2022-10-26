@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""reads every ten lines of stdin printing errors and storage used"""
+""" Reads every ten lines of stdin printing errors and storage used
+"""
 
 
 from sys import stdin
