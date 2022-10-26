@@ -1,5 +1,11 @@
 #!/usr/bin/python3
-""" Reads every ten lines of stdin printing errors and storage used
+"""Reads every ten lines of stdin printing errors and storage us\
+ed
+
+Attributes:
+    fs (int): use dto safe total memory used
+    sc (dict): records how many times an err code pops up
+
 """
 
 
@@ -7,7 +13,16 @@ from sys import stdin
 
 
 def getdata(st, no):
-    """ parses st for the noth <>"""
+    """ parses st for the noth <>
+
+    Args:
+        st (str): string to parsr
+        no (int); point to parse from
+
+    Returns:
+        returns int parsed
+    """
+
     le = len(st)
     for i in range(le):
         if st[i] == '<':
@@ -18,8 +33,6 @@ def getdata(st, no):
                     return st[i+1:j]
 
 
-""" Reads every ten lines of stdin printing errors and storage used
-"""
 fs = 0
 sc = {200: 0, 301: 0, 400: 0, 401: 0, 403: 0, 404: 0, 405: 0, 500: 0}
 
