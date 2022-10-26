@@ -20,10 +20,11 @@ def has(this, that):
 
 def append_after(filename="", search_string="", new_string=""):
     """appends new to new lines after any line in file containing search"""
-    with open(filename, "r+") as fil:
+    with open(filename, "r") as fil:
         lines = fil.readlines()
         for i in range(len(lines)):
             if has(search_string, lines[i]):
                 lines.insert(i + 1, new_string)
+    with open(filename, "w") as fil:
         for line in lines:
             fil.write(line)
