@@ -1,0 +1,13 @@
+
+"""module to sopve n-queens problem"""
+
+
+def main():
+    """starting point of program"""
+    from sys import argv
+
+    if len(argv) == 2:
+        print("Usage: nqueens N")
+
+
+main()
