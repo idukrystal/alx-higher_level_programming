@@ -1,25 +1,19 @@
-A directory for a project to prepare us to create a future Airbnb clone
-The tasks will review the following topics:
-Import
+# 0x0C. Python - Almost a circle
 
-Exceptions
+This project is a combination of all the concepts that I have learnt in python so far. I'm doing it in preparation for the AirBnB project which is a very big part of Higher Level Programming section of the Holberton Software Engineering curriculum. It covers:
+- Import
+- Exceptions
+- Class
+- Private attribute
+- Getter/Setter
+- Class method
+- Static method
+- Inheritance
+- Unittest
+- Read/Write file
+- args and kwargs
+- Serialization/Deserialization
+- JSON
 
-Class
-
-Private attribute
-
-Getter/Setter
-
-Class method
-
-Static method
-
-Inheritance
-
-Unittest
-
-Read/Write file
-
-*args and **kwargs
-
-Json
+# Resources 
+- 
