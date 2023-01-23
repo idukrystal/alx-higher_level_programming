@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""Python script that fetches https://alx-intranet.hbtn.io/status
-using  the package requests."""
-
+"""fetches https://intranet.hbtn.io/status."""
 import requests
 
 
